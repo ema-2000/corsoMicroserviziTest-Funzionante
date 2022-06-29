@@ -7,6 +7,7 @@ public class CorsoDto {
 
     private String nomeCognomeDocente;
 
+    private String nomeNumeroAula;
 
     public String getNomeCorso() {
         return nomeCorso;
@@ -21,4 +22,13 @@ public class CorsoDto {
     public String getNomeCognomeDocente(){
         return this.nomeCognomeDocente;
     }
+
+    public void setNomeNumeroAula(String nomeCognomeDocente){
+        this.nomeNumeroAula=nomeCognomeDocente;
+    }
+    public String getNomeNumeroAula(){
+        return this.nomeNumeroAula;
+    }
+
+
 }

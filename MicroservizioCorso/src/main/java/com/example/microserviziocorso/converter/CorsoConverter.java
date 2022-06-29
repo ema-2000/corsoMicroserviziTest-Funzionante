@@ -19,6 +19,7 @@ public class CorsoConverter {
             CorsoDto c1=new CorsoDto();
             c1.setNomeCorso(c.getNomeCorso());
             c1.setNomeCognomeDocente(c.getNomeCognomeDocente());
+            c1.setNomeNumeroAula(c.getNomeNumeroAula());
             listaDto.add(c1);
         }
         return listaDto;

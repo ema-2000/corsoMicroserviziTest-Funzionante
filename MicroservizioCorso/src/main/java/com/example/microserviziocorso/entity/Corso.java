@@ -25,6 +25,8 @@ public class Corso {
     private  String nomeCognomeDocente;
 
     private Long idDocente;
+    private String nomeNumeroAula;
+    private Long idAula;
 
     public Long getId() {
         return id;
@@ -80,5 +82,21 @@ public class Corso {
 
     public void setIdDocente(Long idDocente) {
         this.idDocente = idDocente;
+    }
+
+    public void setNomeNumeroAula(String nomenumero) {
+        this.nomeNumeroAula=nomenumero;
+    }
+
+    public String getNomeNumeroAula(){
+        return this.nomeNumeroAula;
+    }
+    
+    public void setIdAula(Long idAula){
+        this.idAula=idAula;
+    }
+
+    public Long getIdAula(){
+        return this.idAula;
     }
 }
