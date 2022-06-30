@@ -45,11 +45,10 @@ public class DocenteRestController {
         return "Docente eliminato";
     }
 
- /*   @GetMapping(value="findDocente")
+   @GetMapping(value="findDocente")
     public Optional<Docente> findDocente(@RequestBody Docente id){
-
         return docenteService.findById(id.getId());
-    }*/
+    }
 
     @PutMapping(value="updateDocente")
     public String updateDocente(@RequestBody Docente docente){
