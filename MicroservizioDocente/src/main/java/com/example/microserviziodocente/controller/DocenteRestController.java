@@ -38,18 +38,18 @@ public class DocenteRestController {
         return "Docente salvato";
     }
 
-  /*  @DeleteMapping(value="deleteDocente")
+   @DeleteMapping(value="deleteDocente")
     public String deleteDocente(@RequestBody Docente docente){
 
         docenteService.deleteById((long)docente.getId());
         return "Docente eliminato";
     }
 
-    @GetMapping(value="findDocente")
+ /*   @GetMapping(value="findDocente")
     public Optional<Docente> findDocente(@RequestBody Docente id){
 
         return docenteService.findById(id.getId());
-    }
+    }*/
 
     @PutMapping(value="updateDocente")
     public String updateDocente(@RequestBody Docente docente){
@@ -59,5 +59,5 @@ public class DocenteRestController {
         return "docente_modificato";
     }
 
-*/
+
 }
