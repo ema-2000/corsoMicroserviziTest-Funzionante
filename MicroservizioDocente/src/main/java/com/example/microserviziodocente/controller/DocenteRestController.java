@@ -1,7 +1,6 @@
 package com.example.microserviziodocente.controller;
 
 import com.example.microserviziodocente.entity.Docente;
-//import com.example.demoacademyspring2.entity.entityDto.DocenteDto;
 import com.example.microserviziodocente.service.DocenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -39,15 +38,15 @@ public class DocenteRestController {
     }
 
    @DeleteMapping(value="deleteDocente")
-    public String deleteDocente(@RequestBody Docente docente){
+    public String deleteDocente(@RequestParam Long id){
 
-        docenteService.deleteById((long)docente.getId());
+        docenteService.deleteById(id);
         return "Docente eliminato";
     }
 
    @GetMapping(value="findDocente")
-    public Optional<Docente> findDocente(@RequestBody Docente id){
-        return docenteService.findById(id.getId());
+    public Optional<Docente> findDocente(@RequestParam Long id){
+        return docenteService.findById(id);
     }
 
     @PutMapping(value="updateDocente")
